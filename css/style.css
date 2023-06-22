@@ -1,0 +1,341 @@
+@import url('./header.css');
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #151719;
+}
+
+.center {
+    padding-left: calc(50% - 1440px / 2);
+    padding-right: calc(50% - 1440px / 2);
+}
+
+/* Настройка интро */
+
+.intro__block {
+    text-align: center;
+    margin-top: 80px;
+}
+
+/* Общая настройка для title и subtitle */
+.section__text--flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+/* Общая настройка для title и subtitle */
+
+.intro__title {
+    font-weight: bold;
+    font-size: 52px;
+    line-height: 62px;
+    letter-spacing: -0.5px;
+    margin-bottom: 16px;
+    color: rgba(217, 227, 234, 1);
+}
+
+.intro__subtitle {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.25px;
+    max-width: 768px;
+    margin-bottom: 32px;
+    color: rgba(155, 169, 180, 1);
+}
+
+.intro__buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 64px;
+}
+
+.intro__buttons--button {
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 32px;
+    background-color: #5D5DFF;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.25px;
+    box-shadow: 0px 10px 15px -3px rgba(21, 23, 25, 0.16);
+    border-radius: 2px;
+    border: 1px solid #5D5DFF;
+    transition: background-color .2s ease-in-out;
+}
+
+.intro__buttons--button:hover {
+    background-color: transparent;
+}
+
+.intro__buttons--button:nth-child(2) {
+    background-color: rgba(51, 54, 58, 1);
+    border: 1px solid rgba(51, 54, 58, 1);
+}
+
+.intro__buttons--button:nth-child(2):hover {
+    background-color: transparent;
+}
+
+.intro__player {
+    position: relative;
+    z-index: 9999;
+}
+
+.intro__decoration::before {
+    content: url(../img/png/leftcenter.png);
+}
+
+.intro__decoration {
+    position: absolute;
+    pointer-events: none;
+    bottom: -15%;
+    left: 15%;
+}
+
+/* Настройка workflows */
+
+.workflows__block {
+    text-align: center;
+    margin-top: 128px;
+}
+
+.workflows__title {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: -0.5px;
+    max-width: 768px;
+    margin-bottom: 44px;
+    color: rgba(217, 227, 234, 1);
+}
+
+/* Настройка workflows карточек */
+
+.workflows__card--block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+}
+
+.workflows__card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.workflows__card--img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 16px;
+}
+
+.workflows__card--title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: -0.25px;
+    color: rgba(217, 227, 234, 1);
+}
+
+.workflows__card--subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: -0.25px;
+    max-width: 369px;
+    color: rgba(155, 169, 180, 1);
+}
+
+.main__spacer {
+    margin-top: 80px;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(51, 54, 58, 1);
+}
+
+/* Настройки Projects */
+
+.projects__block {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.projects__badge {
+    width: fit-content;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    border-radius: 15px;
+    padding: 4px 12px;
+    margin-bottom: 16px;
+    color: rgba(54, 162, 105, 1);
+    background-color: rgba(198, 246, 213, 1);
+}
+
+.projects__title {
+    margin-bottom: 16px;
+}
+
+.projects__subtitle {
+    margin-bottom: 80px;
+}
+
+.projects__card--block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+    margin-bottom: 80px;
+}
+
+.projects__card--text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.projects__card--pretitle {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.25px;
+    margin-bottom: 8px;
+    color: rgba(93, 93, 255, 1);
+}
+
+.projects__card--title {
+    font-size: 32px;
+    line-height: 42px;
+    margin-bottom: 9px;
+}
+
+.projects__card--subtitle {
+    text-align: left;
+    max-width: 500px;
+    margin-bottom: 16px;
+}
+
+.projects__card--arrow {
+    margin-bottom: 8px;
+}
+
+.projects__card--arrow::before {
+    content: url(../img/svg/arrow.svg);
+    margin-right: 8px;
+}
+
+.projects__card--arrow:last-child {
+    margin-bottom: 0;
+}
+
+.project__card--img {
+    width: min-content;
+}
+
+/* Настройка Reviews */
+
+.reviews__block {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.reviews__title {
+    margin-bottom: 16px;
+}
+
+.reviews__card--block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.reviews__card--content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 24px;
+    background-color: rgba(37, 40, 44, 1);
+}
+
+.reviews__card--img {
+    max-width: 60px;
+    max-height: 48px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.reviews__card--quote {
+    position: absolute;
+    color: rgba(93, 93, 255, 1);
+    font-size: 64px;
+    top: 15px;
+    bottom: 0;
+    left: 0;
+    right: -40px;
+}
+
+.reviews__subtitle {
+    max-width: 304px;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.reviews__spacer {
+    margin-top: 24px;
+}
+
+.reviews__author {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.25px;
+    color: rgba(217, 227, 234, 1);
+}
+
+.reviews__author--board::before {
+    content: "\0020/\0020";
+    color: rgba(51, 54, 58, 1);
+}
+
+.reviews__author--board {
+    font-weight: 600;
+    color: rgba(93, 93, 255, 1);
+}
