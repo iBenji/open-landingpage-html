@@ -19,13 +19,13 @@ body {
 }
 
 .center {
-    padding-left: calc(50% - 1440px / 2);
-    padding-right: calc(50% - 1440px / 2);
+    padding-left: calc(50% - 1104px / 2);
+    padding-right: calc(50% - 1104px / 2);
 }
 
 /* Настройка интро */
 
-.intro__block {
+.intro-block {
     text-align: center;
     margin-top: 80px;
 }
@@ -38,9 +38,10 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 /* Общая настройка для title и subtitle */
 
-.intro__title {
+.intro-block__title {
     font-weight: bold;
     font-size: 52px;
     line-height: 62px;
@@ -49,7 +50,7 @@ body {
     color: rgba(217, 227, 234, 1);
 }
 
-.intro__subtitle {
+.intro-block__subtitle {
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
@@ -59,7 +60,7 @@ body {
     color: rgba(155, 169, 180, 1);
 }
 
-.intro__buttons {
+.intro-block__buttons {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -69,7 +70,7 @@ body {
     margin-bottom: 64px;
 }
 
-.intro__buttons--button {
+.intro-block--button {
     text-decoration: none;
     color: #fff;
     padding: 12px 32px;
@@ -84,20 +85,20 @@ body {
     transition: background-color .2s ease-in-out;
 }
 
-.intro__buttons--button:hover {
+.intro-block--button:hover {
     background-color: transparent;
 }
 
-.intro__buttons--button:nth-child(2) {
+.intro-block--button:nth-child(2) {
     background-color: rgba(51, 54, 58, 1);
     border: 1px solid rgba(51, 54, 58, 1);
 }
 
-.intro__buttons--button:nth-child(2):hover {
+.intro-block--button:nth-child(2):hover {
     background-color: transparent;
 }
 
-.intro__player {
+.intro-block__player {
     position: relative;
     z-index: 9999;
 }
@@ -106,7 +107,7 @@ body {
     content: url(../img/png/leftcenter.png);
 }
 
-.intro__decoration {
+.intro-block__decoration {
     position: absolute;
     pointer-events: none;
     bottom: -15%;
@@ -115,12 +116,12 @@ body {
 
 /* Настройка workflows */
 
-.workflows__block {
+.workflows-block {
     text-align: center;
     margin-top: 128px;
 }
 
-.workflows__title {
+.workflows-block__title {
     font-weight: bold;
     font-size: 40px;
     line-height: 50px;
@@ -132,7 +133,7 @@ body {
 
 /* Настройка workflows карточек */
 
-.workflows__card--block {
+.workflows-block__card {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -141,7 +142,7 @@ body {
     gap: 64px;
 }
 
-.workflows__card {
+.workflows-block__card-content {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -150,13 +151,31 @@ body {
     gap: 6px;
 }
 
-.workflows__card--img {
+.workflows-block__card-img {
     width: 64px;
     height: 64px;
     margin-bottom: 16px;
 }
 
-.workflows__card--title {
+.workflows-block__title {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 50px;
+    letter-spacing: -0.5px;
+    max-width: 768px;
+}
+
+.workflows-block__subtitle {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.25px;
+    max-width: 768px;
+    margin-bottom: 32px;
+    max-width: 768px;
+    color: #9BA9B4;
+}
+
+.workflows-block__card-title {
     font-weight: 700;
     font-size: 24px;
     line-height: 34px;
@@ -164,7 +183,7 @@ body {
     color: rgba(217, 227, 234, 1);
 }
 
-.workflows__card--subtitle {
+.workflows-block__card-subtitle {
     font-weight: 400;
     font-size: 18px;
     line-height: 27px;
@@ -182,12 +201,12 @@ body {
 
 /* Настройки Projects */
 
-.projects__block {
+.projects-block {
     margin-top: 80px;
     text-align: center;
 }
 
-.projects__badge {
+.projects-block__badge {
     width: fit-content;
     font-weight: 600;
     font-size: 14px;
@@ -199,15 +218,15 @@ body {
     background-color: rgba(198, 246, 213, 1);
 }
 
-.projects__title {
+.projects-block__title {
     margin-bottom: 16px;
 }
 
-.projects__subtitle {
+.projects-block__subtitle {
     margin-bottom: 80px;
 }
 
-.projects__card--block {
+.projects-block__card-content {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -217,7 +236,7 @@ body {
     margin-bottom: 80px;
 }
 
-.projects__card--text {
+.projects-block__card-text {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -225,7 +244,7 @@ body {
     align-items: flex-start;
 }
 
-.projects__card--pretitle {
+.projects-block__card-pretitle {
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
@@ -234,47 +253,56 @@ body {
     color: rgba(93, 93, 255, 1);
 }
 
-.projects__card--title {
+.projects-block__card-title {
     font-size: 32px;
     line-height: 42px;
     margin-bottom: 9px;
 }
 
-.projects__card--subtitle {
+.projects-block__card-subtitle {
     text-align: left;
     max-width: 500px;
     margin-bottom: 16px;
 }
 
-.projects__card--arrow {
+.projects-block__card-arrow {
     margin-bottom: 8px;
 }
 
-.projects__card--arrow::before {
+.projects-block__card-arrow::before {
     content: url(../img/svg/arrow.svg);
     margin-right: 8px;
 }
 
-.projects__card--arrow:last-child {
+.projects-block__card-arrow:last-child {
     margin-bottom: 0;
 }
 
-.project__card--img {
+.projects-block__card-img {
     width: min-content;
 }
 
 /* Настройка Reviews */
 
-.reviews__block {
+.reviews-block {
     margin-top: 80px;
     text-align: center;
 }
 
-.reviews__title {
+.reviews-block__title {
     margin-bottom: 16px;
 }
 
-.reviews__card--block {
+.reviews-block__subtitle {
+    color: #9BA9B4;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.25px;
+    max-width: 768px;
+    margin-bottom: 80px;
+}
+
+.reviews-block__card-block {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -283,7 +311,7 @@ body {
     gap: 24px;
 }
 
-.reviews__card--content {
+.reviews-block__card-content {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -294,7 +322,7 @@ body {
     background-color: rgba(37, 40, 44, 1);
 }
 
-.reviews__card--img {
+.reviews-block__card-img {
     max-width: 60px;
     max-height: 48px;
     background-repeat: no-repeat;
@@ -302,7 +330,7 @@ body {
     overflow: hidden;
 }
 
-.reviews__card--quote {
+.reviews-block__card-quote {
     position: absolute;
     color: rgba(93, 93, 255, 1);
     font-size: 64px;
@@ -312,17 +340,17 @@ body {
     right: -40px;
 }
 
-.reviews__subtitle {
+.reviews-block__card-subtitle {
     max-width: 304px;
     margin-bottom: 0;
     text-align: left;
 }
 
-.reviews__spacer {
+.reviews-block__spacer {
     margin-top: 24px;
 }
 
-.reviews__author {
+.reviews-block__author {
     margin-top: 20px;
     font-size: 16px;
     line-height: 24px;
@@ -330,12 +358,86 @@ body {
     color: rgba(217, 227, 234, 1);
 }
 
-.reviews__author--board::before {
+.reviews-block__author-board::before {
     content: "\0020/\0020";
     color: rgba(51, 54, 58, 1);
 }
 
-.reviews__author--board {
+.reviews-block__author-board {
     font-weight: 600;
     color: rgba(93, 93, 255, 1);
+}
+
+/* Настройка Подписки */
+
+.subscribe-block {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 80px;
+    padding: 65px 48px;
+    background-color: #5D5DFF;
+}
+
+.subscribe-block__text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.subscribe-block-title {
+    font-weight: bold;
+    color: #FFF;
+}
+
+.subscribe-block-subtitle {
+    color: #E2E1FF;
+}
+
+.subscribe-block__input-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.subscribe-block__input-flex input {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.25px;
+    padding: 12px 16px;
+    border-radius: 2px;
+    border: 1px solid #8D8DFF;
+    color: #ABABFF;
+    background: #4B4ACF;
+}
+
+.subscribe-block__input-flex button {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    line-height: 24px;
+    letter-spacing: -0.25px;
+    padding: 12px 32px;
+    border-radius: 2px;
+    border: 1px solid #F4F4FF;
+    color: #5D5DFF;
+    background-color: #F4F4FF;
+    box-shadow: 0px 1px 3px 0px rgba(25, 32, 44, 0.04);
+    transition: all .2s ease-in-out;
+}
+
+.subscribe-block__input-flex button:hover {
+    background-color: transparent;
+    color: #151719;
+}
+
+.subscribe-block__img {
+    position: absolute;
+    top: 0;
+    right: 0;
 }
