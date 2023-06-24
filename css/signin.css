@@ -1,0 +1,76 @@
+.center-sign {
+    padding-left: calc(50% - 400px / 2);
+    padding-right: calc(50% - 400px / 2);
+}
+
+.main-signin__block {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 104px;
+}
+
+.intro-block__title {
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 806px;
+    margin-bottom: 80px;
+}
+
+/* Настройка кнопок и форм */
+
+.main-signin__forms {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-signin__google {
+    position: relative;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.25px;
+    border-radius: 2px;
+    border: 0;
+    background: #E53D3E;
+    box-shadow: 0px 10px 15px -3px rgba(21, 23, 25, 0.16);
+    padding: 12px 125px;
+    margin-bottom: 36px;
+}
+
+.main-signin--lines {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.main-signin__spacer {
+    height: 1px;
+    width: 80px;
+    background-color: rgba(51, 54, 58, 1);
+}
+
+.main-signin__google::before {
+    position: absolute;
+    content: url(../img/svg/google.svg);
+    top: 12px;
+    left: 16px;
+}
+
+.main-signin__substitle {
+    text-decoration: none;
+    color: #9BA9B4;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.25px;
+}

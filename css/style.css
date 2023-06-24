@@ -15,6 +15,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    color: #9BA9B4;
     background-color: #151719;
 }
 
@@ -24,6 +25,10 @@ body {
 }
 
 /* Настройка интро */
+
+.main {
+    flex-grow: 1;
+}
 
 .intro-block {
     text-align: center;
@@ -172,7 +177,6 @@ body {
     max-width: 768px;
     margin-bottom: 32px;
     max-width: 768px;
-    color: #9BA9B4;
 }
 
 .workflows-block__card-title {
@@ -294,7 +298,6 @@ body {
 }
 
 .reviews-block__subtitle {
-    color: #9BA9B4;
     font-size: 20px;
     line-height: 30px;
     letter-spacing: -0.25px;
@@ -440,4 +443,84 @@ body {
     position: absolute;
     top: 0;
     right: 0;
+}
+
+/* Настройка футера */
+
+.footer {
+    margin-top: 64px;
+    margin-bottom: 67px;
+}
+
+.footer-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-block__left {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.footer__block-left__subtitle {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.25px;
+    max-width: 352px;
+}
+
+.footer-block__title {
+    color: #D9E3EA;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    margin-bottom: 4px;
+}
+
+.footer-block__right {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+
+.footer-block__link {
+    text-decoration: none;
+    color: #9BA9B4;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 4px;
+}
+
+.footer-block__link:last-child {
+    margin-bottom: 0;
+}
+
+.footer-block__bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 48px;
+}
+
+.footer-block__icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.footer-block__icon {
+    max-width: 32px;
+    max-height: 32px;
+}
+
+.footer-author {
+    color: rgba(217, 227, 234, 1);
 }
