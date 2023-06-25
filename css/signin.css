@@ -26,8 +26,9 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+
+    /* justify-content: center;
+    align-items: center; */
 }
 
 .main-signin__google {
@@ -42,7 +43,13 @@
     background: #E53D3E;
     box-shadow: 0px 10px 15px -3px rgba(21, 23, 25, 0.16);
     padding: 12px 125px;
-    margin-bottom: 36px;
+    margin-bottom: 24px;
+    border: 1px solid #E53D3E;
+    transition: background-color .2s ease-in-out;
+}
+
+.main-signin__google:hover {
+    background-color: transparent;
 }
 
 .main-signin--lines {
@@ -52,6 +59,7 @@
     justify-content: center;
     align-items: center;
     gap: 12px;
+    margin-bottom: 24px;
 }
 
 .main-signin__spacer {
@@ -73,4 +81,119 @@
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.25px;
+}
+
+/* Настройка инпутов */
+
+/* .main-signin__form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+} */
+
+#first-name,
+#password {
+    border-radius: 2px;
+    border: 1px solid #33363A;
+    background-color: transparent;
+    width: 100%;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    margin-top: 4px;
+}
+
+#first-name::placeholder,
+#password::placeholder {
+    color: #707D86;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.25px;
+}
+
+.main-signin__text {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.main-req {
+    color: red;
+}
+
+.main-signin__checkbox-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-signin__checkbox {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.custom-checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.custom-checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+.custom-checkbox:checked+label::before {
+    border-color: rgba(93, 93, 255, 1);
+    background-color: rgba(93, 93, 255, 1);
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+.main-signin__text--center {
+    text-align: center;
+}
+
+.main-signin__text--link {
+    text-decoration: none;
+    color: rgba(93, 93, 255, 1);
+}
+
+.main-signin__signin {
+    margin-top: 24px;
+    padding: 12px 0;
+    width: -webkit-fill-available;
+    border: 0;
+    border-radius: 2px;
+    background: #5D5DFF;
+    box-shadow: 0px 10px 15px -3px rgba(21, 23, 25, 0.16);
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.25px;
+    margin-bottom: 24px;
+    border: 1px solid #5D5DFF;
+    transition: background-color .2s ease-in-out;
+}
+
+.main-signin__signin:hover {
+    background-color: transparent;
 }

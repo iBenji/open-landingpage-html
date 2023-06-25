@@ -436,7 +436,7 @@ body {
 
 .subscribe-block__input-flex button:hover {
     background-color: transparent;
-    color: #151719;
+    color: #FFF;
 }
 
 .subscribe-block__img {
@@ -455,6 +455,7 @@ body {
 .footer-block {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
