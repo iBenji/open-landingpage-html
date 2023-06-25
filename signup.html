@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Open</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/signin.css">
+    <link rel="stylesheet" href="./css/signup.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__block center">
+            <a href="./index.html"><img class="header__logo" src="./img/svg/logo.svg" alt="Logo"></a>
+            <div class="header__buttons">
+                <a class="header__buttons--button" href="./signin.html">Sign In</a>
+                <a class="header__buttons--button" href="./signup.html">Sign Up</a>
+            </div>
+            <div class="header__decoration"></div>
+        </div>
+    </header>
+    <main class="main center">
+        <section class="main-signin__block">
+            <h1 class="intro-block__title">Welcome. We exist to make entrepreneurism easier.</h1>
+            <div class="main-signin__forms center-sign">
+                <button class="main-signin__google">Sign up with Google</button>
+                <div class="main-signin--lines">
+                    <div class="main-signin__spacer"></div>
+                    <a href="#" class="main-signin__substitle">Or, register with your email</a>
+                    <div class="main-signin__spacer"></div>
+                </div>
+                <form class="main-signin__form" action="#" method="post">
+                    <label class="main-signin__text" for="first-name">Full Name <span class="main-req">*</span></label>
+                    <input type="text" id="first-name" name="first-name" required placeholder="First and last name">
+                    <label class="main-signin__text" for="company-name">Company Name <span class="main-req">*</span></label>
+                    <input type="text" id="company-name" name="company-name" required placeholder="Your company or app name">
+                    <label class="main-signin__text" for="work-email">Work Email <span class="main-req">*</span></label>
+                    <input type="text" id="work-email" name="work-email" required placeholder="you@yourcompany.com">
+                    <label class="main-signin__text" for="password">Password <span class="main-req">*</span></label>
+                    <input type="password" id="password" name="password" required placeholder="Password (at least 10 characters)">
+                    <p class="main-signin__text main-signin__text--center">I agree to be contacted by Open PRO about this offer as per the Open PRO <a href="#" class="main-policy">Privacy Policy</a>.</p>
+                    <input class="main-signin__signin" type="submit" value="Sign Up">
+                </form>
+                <p class="main-signin__text main-signin__text--center">Already using Open PRO? <a
+                        class="main-signin__text--link" href="./signin.html">Sign in</a></p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer center">
+        <div class="footer-block">
+            <div class="footer-block__left">
+                <a href="/index.html"><img class="header__logo" src="./img/svg/logo.svg" alt="Logo"></a>
+                <p class="footer__block-left__subtitle">Lorem ipsum is placeholder text commonly used in the graphic,
+                    print,
+                    and publishing industries for previewing layouts and visual mockups.</p>
+            </div>
+            <div class="footer-block__right">
+                <ul class="footer-block__list">
+                    <li class="footer-block__item">
+                        <p class="footer-block__title">Products</p>
+                    </li>
+                    <li class="footer-block__item">
+                        <p><a class="footer-block__link" href="#">Web Studio</a></p>
+                    </li>
+                    <li class="footer-block__item">
+                        <p><a class="footer-block__link" href="#">DynamicBox Flex</a></p>
+                    </li>
+                    <li class="footer-block__item">
+                        <p><a class="footer-block__link" href="#">Programming Forms</a></p>
+                    </li>
+                </ul>
+                <ul class="footer-block__list">
+                    <li class="footer-block__item">
+                        <p class="footer-block__title">Resources</p>
+                    </li>
+                    <li class="footer-block__item">
+                        <p><a class="footer-block__link" href="#">Nostrud exercitation</a></p>
+                    </li>
+                    <li class="footer-block__item">
+                        <p><a class="footer-block__link" href="#">Visual mockups</a></p>
+                    </li>
+                    <li class="footer-block__item">
+                        <p><a class="footer-block__link" href="#">Nostrud exercitation</a></p>
+                    </li>
+                    <li class="footer-block__item">
+                        <p><a class="footer-block__link" href="#">Visual mockups</a></p>
+                    </li>
+                    <li class="footer-block__item">
+                        <p><a class="footer-block__link" href="#">Nostrud exercitation</a></p>
+                    </li>
+                </ul>
+                <ul class="footer-block__list">
+                    <li class="footer-block__item">
+                        <p class="footer-block__title">Company</p>
+                    </li>
+                    <li class="footer-block__item">
+                        <p><a class="footer-block__link" href="#">Consectetur adipiscing</a></p>
+                    </li>
+                    <li class="footer-block__item">
+                        <p><a class="footer-block__link" href="#">Labore et dolore</a></p>
+                    </li>
+                    <li class="footer-block__item">
+                        <p><a class="footer-block__link" href="#">Consectetur adipiscing</a></p>
+                    </li>
+                    <li class="footer-block__item">
+                        <p><a class="footer-block__link" href="#">Labore et dolore</a></p>
+                    </li>
+                    <li class="footer-block__item">
+                        <p><a class="footer-block__link" href="#">Consectetur adipiscing</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-block__bottom">
+            <p class="footer-block__link">Made by <span class="footer-author">Cruip</span>. All right reserved</p>
+            <div class="footer-block__icons">
+                <a href="#"><img class="footer-block__icon" src="./img/svg/twitter.svg" alt="Twitter"></a>
+                <a href="#"><img class="footer-block__icon" src="./img/svg/git.svg" alt="GitHub"></a>
+                <a href="#"><img class="footer-block__icon" src="./img/svg/fb.svg" alt="Facebook"></a>
+                <a href="#"><img class="footer-block__icon" src="./img/svg/instagram.svg" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
