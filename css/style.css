@@ -423,7 +423,6 @@ body {
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
-    line-height: 24px;
     letter-spacing: -0.25px;
     padding: 12px 32px;
     border-radius: 2px;
@@ -524,4 +523,62 @@ body {
 
 .footer-author {
     color: rgba(217, 227, 234, 1);
+}
+
+@media (max-width: 720px) {
+    body {
+        padding: 10px;
+    }
+
+    .intro-block__title {
+        font-size: 32px;
+    }
+
+    .projects-block__card-img {
+        width: 100vw !important;
+        padding: 10px;
+    }
+
+    .intro-block__decoration {
+        display: none;
+    }
+
+    .projects-block__title,
+    .projects-block__card-title {
+        text-align: center;
+    }
+
+    .subscribe-block__input-flex button {
+        width: -webkit-fill-available;
+    }
+
+    .reviews-block__card-quote {
+        display: none;
+    }
+
+    .projects-block {
+        text-align: left !important;
+    }
+
+    .footer__block-left__subtitle {
+        margin-bottom: 80px;
+    }
+
+    .footer-block__bottom {
+        flex-direction: column !important;
+    }
+
+    .main-signin__google {
+        padding: 12px 12px !important;
+    }
+
+    .main-signin__substitle {
+        font-size: 9px !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .projects-block__subtitle {
+        text-align: center;
+    }
 }
